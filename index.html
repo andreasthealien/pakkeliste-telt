@@ -5,14 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pakkeliste</title>
     <style>
+        body {
+            overflow-x: hidden;
+        }
         table {
             width: 100%;
             border: solid 1px black;
             border-collapse: collapse;
+            
         }
         th, td {
             border: solid 1px black;
             border-collapse: collapse;
+        }
+
+        @media (max-width: 1000px) {
+            table {
+                width: unset;
+                overflow-x: auto;
+            }
+            td {
+                width: 999px;
+            }
         }
     </style>
 </head>
